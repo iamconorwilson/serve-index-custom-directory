@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+</head>
+<body class="preload">
+    <header>
+        <div class="wrapper">
+            <h1>Directory</h1>
+            <div id="options">
+                <div id="search">
+                    <div id="search-icon"></div>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div id="dark-mode">
+                    <input type="checkbox" id="switch" checked>
+                    <label for="switch">
+                        <div id="moon"></div>
+                        <div id="sun"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2><a href="/">~</a>/</h2>
+        <ul id="files" class="view-details"><li class="header"><span class="name">Name</span><span class="size">Size</span><span class="date">Modified</span></li><li><a href="/test" class="icon icon-directory" title="test"><span class="name">test</span><span class="size"></span><span class="date">25/01/2023 16:42:21</span></a></li>
+            <li><a href="/directory.html" class="icon icon icon-html icon-text-html" title="directory.html"><span class="name">directory.html</span><span class="size">1499</span><span class="date">25/01/2023 16:31:09</span></a></li>
+            <li><a href="/icons.css" class="icon icon icon-css icon-text-css" title="icons.css"><span class="name">icons.css</span><span class="size">1252</span><span class="date">25/01/2023 16:42:01</span></a></li>
+            <li><a href="/script.js" class="icon icon icon-js icon-application-javascript" title="script.js"><span class="name">script.js</span><span class="size">3389</span><span class="date">25/01/2023 16:15:44</span></a></li>
+            <li><a href="/styles.css" class="icon icon icon-css icon-text-css" title="styles.css"><span class="name">styles.css</span><span class="size">1983</span><span class="date">25/01/2023 16:42:15</span></a></li>
+        </ul>
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
