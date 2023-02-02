@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Index</title>
+
+    <style>
+        {{&style}}
+    </style>
+
+</head>
+
+<body class="preload">
+    <header>
+        <div class="wrapper">
+            <h1>Directory</h1>
+            <div id="options">
+                <div id="search">
+                    <div id="search-icon"></div>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div id="dark-mode">
+                    <input type="checkbox" id="switch" checked>
+                    <label for="switch">
+                        <div id="moon"></div>
+                        <div id="sun"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>
+            ~ {{&linkedPath}}
+        </h2>
+        <!-- FILES LIST -->
+        {{&list}}
+    </main>
+
+    <script>
+        {{&script}}
+    </script>
+</body>
+
+</html>

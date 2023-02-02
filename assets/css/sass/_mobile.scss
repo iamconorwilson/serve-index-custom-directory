@@ -1,0 +1,54 @@
+@media screen and (max-width: 480px) {
+	main {
+		padding: 10px 10px;
+	}
+
+	li {
+		padding: 14px 10px;
+		margin-bottom: 0;
+		border-bottom: 1px solid var(--color-table-header);
+
+		&.header {
+			display: none;
+		}
+
+		&.highlight {
+			border-radius: 0;
+		}
+
+		a {
+			display: block;
+		}
+
+		span.name {
+			width: 100%;
+			padding-bottom: 5px;
+		}
+
+		span.date,
+		span.size {
+			display: inline-block;
+			width: auto;
+			font-size: 0.75rem;
+			background-color: var(--color-table-header);
+			padding: 2px 10px;
+			border-radius: 10px;
+			margin-right: 10px;
+			margin-bottom: 4px;
+		}
+
+		span.size, span.date {
+			&:empty {
+				display: none;
+			}
+		}
+
+		//reset date tooltip
+		span.date {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+}
