@@ -1,6 +1,6 @@
 {
   "name": "serve-index-custom-directory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom directory page implimentation for express serve-index",
   "main": "index.js",
   "scripts": {
