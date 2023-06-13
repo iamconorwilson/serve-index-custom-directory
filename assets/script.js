@@ -48,9 +48,12 @@ function searchFiles(searchValue) {
 
     let files = document.querySelectorAll("#files li:not(.header)");
 
+    console.log(searchValue)
+
     if (searchValue == "") {
         search.classList.remove("active");
-        files.map((file) => {
+
+        Array.from(files, file => {
             file.classList.remove("highlight");
         });
         return;

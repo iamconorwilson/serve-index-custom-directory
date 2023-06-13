@@ -298,7 +298,7 @@ li.highlight {
   border-radius: 5px;
 }
 
-body:has(#search.active) li:not(.highlight) {
+body:has(#search.active) li:not(.highlight):not(.header) {
   opacity: 0.5;
 }
 
@@ -383,18 +383,17 @@ span.date:before {
   visibility: hidden;
   font-size: 0.9rem;
   white-space: nowrap;
-  background-color: var(--color-primary);
-  color: #fff;
-  text-align: center;
-  border-radius: 30px;
-  padding: 5px 10px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: left;
+  padding: 5px 0;
   position: absolute;
   z-index: 1;
   top: 50%;
   transform: translate(0, -50%);
   left: -1%;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 @media screen and (max-width: 768px) {
