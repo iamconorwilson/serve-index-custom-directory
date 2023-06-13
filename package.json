@@ -1,7 +1,7 @@
 {
   "name": "serve-index-custom-directory",
   "version": "1.0.0",
-  "description": "",
+  "description": "Custom directory page implimentation for express serve-index",
   "main": "index.js",
   "scripts": {
     "dev": "node test/test.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/iamconorwilson/express-custom-directory.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Conor Wilson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamconorwilson/express-custom-directory/issues"
