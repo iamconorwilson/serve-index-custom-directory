@@ -4,11 +4,16 @@ const fs = require('fs');
 
 const { makeList, makeBreadcrumbs } = require(path.join(__dirname, './functions.js'));
 
-const render = (locals, callback) => {
+const render = (locals, callback, title) => {
+
+    if (!title) {
+        title = "Directory";
+    }
 
     const template = fs.readFileSync(path.join(__dirname, './assets/index.mustache'), 'utf8');
 
     const data = {
+        title: title,
         directory: locals.directory,
         list: makeList(locals.directory, locals.fileList),
         linkedPath: makeBreadcrumbs(locals.directory),
